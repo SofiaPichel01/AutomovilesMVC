@@ -3,11 +3,16 @@
 @{
     ViewData["Title"] = "Vehículos";
 }
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+
 <div class="container">
     <h1>Vehículos</h1>
 
     <p>
-        <a asp-action="Create">Ingrese un nuevo vehículo</a>
+        <a class="crearCategoria-link" asp-action="Create">Ingrese un nuevo vehículo</a>
     </p>
     <table class="table table-danger table-hover ">
         <thead>
@@ -79,5 +84,6 @@
 </div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
 }
 

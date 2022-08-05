@@ -2,3 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+//JS GRID
+$(document).ready(function () {
+    $('#table_id').DataTable();
+});
