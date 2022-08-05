@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Automoviles.Models.Vehiculo>
+
+@{
+    ViewData["Title"] = "Vehículos";
+}
+<div class="container">
+    <h1>Vehículos</h1>
+
+    <p>
+        <a asp-action="Create">Ingrese un nuevo vehículo</a>
+    </p>
+    <table class="table table-danger table-hover ">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaDeLanzamiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Marca)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pais)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Seguro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Color)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Combustible)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaDeLanzamiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Marca.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pais.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Seguro.Empresa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Combustible.Nombre)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-pencil-square-o" aria-hidden="true"> </i></a> |
+                        <a asp-action="Details" asp-route-id="@item.Id"> <i class="fa fa-info-circle" aria-hidden="true"> </i></a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

@@ -1,0 +1,12 @@
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\bin\Debug\net5.0\Automoviles.Models.deps.json
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\bin\Debug\net5.0\Automoviles.Models.dll
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\bin\Debug\net5.0\ref\Automoviles.Models.dll
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\bin\Debug\net5.0\Automoviles.Models.pdb
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.csproj.AssemblyReference.cache
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.AssemblyInfoInputs.cache
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.AssemblyInfo.cs
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.csproj.CoreCompileInputs.cache
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.dll
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\ref\Automoviles.Models.dll
+C:\Users\spichel\Documents\.NET-SMS\MVC\MVC-AUTOMOVILES\Automoviles.Models\Automoviles.Models\obj\Debug\net5.0\Automoviles.Models.pdb

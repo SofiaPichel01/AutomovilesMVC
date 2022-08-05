@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Automoviles.Models.Combustible>
+
+@{
+    ViewData["Title"] = "Combustible";
+}
+
+<div class="container">
+    <h1>Combustible</h1>
+
+    <p>
+        <a asp-action="Create">Ingresar nuevo tipo de combustible</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-pencil-square-o" aria-hidden="true"> </i></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id"> <i class="fa fa-info-circle" aria-hidden="true"> </i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
