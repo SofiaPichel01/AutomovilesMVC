@@ -10,6 +10,10 @@
 body {
     background-color: var(--bg--rojoClaro--);
 }
+
+.container-fluid {
+    margin-top: 130px;
+}
 a.navbar-brand {
     white-space: normal;
     text-align: center;
@@ -23,6 +27,7 @@ a.navbar-brand {
     padding: 23px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 300;
+    
 }
 
 a {
@@ -113,9 +118,7 @@ body {
 /*FONT AWESOME ICONOS*/
 
 
-.fa {
-    color: #fff6f6;
-}
+
 
 /* CREAR CATEGORIA*/
 
