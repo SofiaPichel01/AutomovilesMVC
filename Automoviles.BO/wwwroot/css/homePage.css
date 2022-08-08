@@ -116,6 +116,28 @@ body {
         background-color: #FF4A4A;
     }
 
+/*IFRAME*/
+.iframe-container {
+    background-color: #ff3939;
+    margin-top: 137px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    margin-bottom: 119px;
+    color: #fff6f6;
+    padding: 60px;
+    display: flex;
+    gap: 3rem;
+}
+
+.title-iframe{
+    margin-top: 47px;
+    padding-right: 100px;
+    padding-left: 20px;
+    margin-left: 0;
+    text-shadow: 2px 1px 15px rgba(145, 150, 150, 0.18);
+    font-size: 34px;
+    
+}
+
 /*IMG HOME PAGE*/
 .img-container {
     align-content: center;
@@ -155,4 +177,10 @@ body {
 .img-container:hover {
     transition: .5s ease-in;
     opacity: 0.4;
+}
+
+/*VEHICULO/DETALLES*/
+.lblModificarVolverLista {
+    font-weight:400;
+    font-size:17px;
 }
