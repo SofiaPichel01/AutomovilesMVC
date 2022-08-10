@@ -7,7 +7,9 @@
 <link href="~/css/homePage.css" rel="stylesheet" />
 
 <!--CAROUSEL-->
-<div class="homepage-carousel-container">
+<div class="homepage-carousel-container" style="
+    height: 380px !important;
+    overflow: hidden;>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -16,15 +18,15 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="~/img/redcar2.jpg" class="d-block w-100" alt="...">
+                <img src="~/img/redferrari.jpg" class="d-block w-100 img" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="~/img/redsuv1.jpg" class="d-block w-100" alt="...">
+                <img src="~/img/lance-asper--pSOAtdMVlk-unsplash.jpg" class="d-block w-100 img" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/redmotorbike1.jpg" class="d-block w-100 img" alt="..." />
+            </div>
 
-            </div>
-            <div class="carousel-item">
-                <img src="~/img/redmotorbike1.jpg" class="d-block w-100" alt="..." />
-            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -39,7 +41,7 @@
 </div>
 
 <!--QUIENES SOMOS -->
-<div class="empresa-container">
+<!--<div class="empresa-container">
     <div class="text-center">
         <h1 class="title-quienesSomos">¿Quiénes somos?</h1>
     </div>
@@ -57,38 +59,56 @@
         <img class="img-quienesSomos-container" src="~/img/inmobiliaria.jpg" />
 
     </div>
-</div>
-
+</div>-->
 <!--CARDS-->
-<div class="container card-container">
-    <h1 class="title-card text-center">En nuestra tienda encontrarás los mejores vehículos del mercado, nuevos, usados premium y clásicos.</h1>
+<div class="container">
 
-    <div class="card" >
-        <img src="~/img/redcar3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Autos</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver autos</a>
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-3 p-3">
+            <h1 class="text-center">En nuestra tienda encontrarás los mejores vehículos del mercado, nuevos, usados premium y clásicos.</h1>
+
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-3">
+            <div class="card" style="width:auto;">
+                <img src="~/img/redcar3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Autos</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver autos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-3">
+            <div class="card" style="width:auto;">
+                <img src="~/img/redmotorbike2 (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Motos</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver motos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 p-3">
+            <div class="card" style="width:auto;">
+                <img src="~/img/redvan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Camionetas</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver camionetas</a>
+                </div>
+            </div>
         </div>
     </div>
+
     
-    <div class="card" >
-        <img src="~/img/redmotorbike2 (1).jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Motos</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver motos</a>
-        </div>
-    </div>
 
-    <div class="card" >
-        <img src="~/img/redvan.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Camionetas</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a asp-controller="Vehiculos" asp-action="Index" class="btn card-btn btn-outline-danger">Ver camionetas</a>
-        </div>
-    </div>
+
+
+   
+
+   
+
+
 </div>
 
 <!--DONDE NOS ENCONTRAMOS-->
@@ -103,5 +123,49 @@
         Av. del Libertador 5922, C1428 CABA
 
     </h1>
+</div>
+
+<div class="container infoExtra-container">
+
+    <div class="info-card" style="width: 15rem;">
+
+        <img src="~/img/infoExtra (1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Autos usados</h5>
+            <br />
+            <a href="#" class="btn  btn-infoExtra">>Más información</a>
+        </div>
+    </div>
+
+    <div class="info-card" style="width: 15rem;">
+
+        <img src="~/img/infoExtra (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Cotización</h5>
+            <br />
+            <a href="#" class="btn  btn-infoExtra">>Más información</a>
+        </div>
+    </div>
+
+    <div class="info-card" style="width: 15rem;">
+
+        <img src="~/img/infoExtra (3).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Accesorios</h5>
+            <br />
+            <a href="#" class="btn  btn-infoExtra">>Más información</a>
+        </div>
+    </div>
+
+    <div class="info-card" style="width: 15rem;">
+
+        <img src="~/img/infoExtra (4).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Sustentabilidad</h5>
+            <br />
+            <a href="#" class="btn btn-infoExtra">>Más información</a>
+        </div>
+    </div>
+
 </div>
 

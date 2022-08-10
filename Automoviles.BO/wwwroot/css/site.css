@@ -1,16 +1,22 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fjalla+One&family=Montserrat:wght@300;400&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 :root {
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bg--rojoClaro--: #FFF7F7;
     --purewhite--: #ffffff;
 }
 
 
-body {
-    background-color: var(--bg--rojoClaro--);
+*{
+ 
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: var(--bg--rojoClaro--)
+}
+.logo {
+    height:90px;
+    width:150px;
+}
 .container-fluid {
     margin-top: 130px;
 }
@@ -18,16 +24,17 @@ a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-    font-size:25px;
+    font-size: 25px;
+    margin-right: 40px;
 }
 
 .navbar {
-    background-color: #FC2626 !important;
+    background-color: #ff3939 !important;
     color: #FFFFFF !important;
-    padding: 23px;
+    padding: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 300;
-    
+    gap: 1300px;
 }
 
 a {
@@ -61,17 +68,35 @@ a {
     border-color: #1861ac;
 }
 
-
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    font-size: 17px;
+.dropdown-menu {
+    border:none;
+    border-radius:3px;
+    background-color:var(--bg--rojoClaro--);
 }
 
+    .dropdown-menu .nav-item:hover {
+        background-color: #FFDBDB;
+    }
+    /* Sticky footer styles
+-------------------------------------------------- */
+    html {
+        font-size: 17px;
+    }
+
+@media (min-width:320px) {
+    html {
+        font-size:13px;
+    }
+}
 @media (min-width: 768px) {
     html {
         font-size: 16px;
+    }
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    html {
+        font-size:18px;
     }
 }
 

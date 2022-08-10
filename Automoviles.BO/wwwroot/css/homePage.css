@@ -3,8 +3,7 @@
     --container--quienesSomos--red: #FF2D2D;
     --bg-btn-card-red: #FF9696;
 }
-body {
-}
+
 
 /*CAROUSEL*/
 
@@ -12,14 +11,19 @@ body {
     align-content: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 143px;
     margin-bottom: 50px;
     position: relative;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    width: 100%;
+    height:auto;
+    position:relative;
 }
 
+.img {
+    height: 100%;
+    transform: translateY(-33%);
+}
 .carousel {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -40,7 +44,7 @@ body {
 
 
 /*Quienes Somos*/
-.empresa-container {
+/*.empresa-container {
     color: var(--bs-white);
     background-color: var(--container--quienesSomos--red);
     margin-top: 25px;
@@ -79,12 +83,12 @@ body {
     max-width: 320px;
     max-height:200px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
+}*/
 
 /*CARDS CONTAINER*/
 
 .card-container {
-    margin-top: 85px;
+    margin-top: 12px;
     margin-bottom: 85px;
     display: flex;
     gap: 3rem;
@@ -101,12 +105,17 @@ body {
     }
 
 .title-card {
-    margin-top: 32px;
-    padding-right:100px;
-    padding-left:20px;
-    margin-left: 0;
-    text-shadow: 2px 1px 15px rgba(145, 150, 150, 0.18);
-    font-size:35px;
+    font-size:33px;
+    padding:35px;
+}
+.card-title {
+    font-size: 17.5px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.card-text {
+    font-size:15px;
 }
 
 .card-btn {
@@ -121,7 +130,7 @@ body {
     background-color: #ff3939;
     margin-top: 137px;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-    margin-bottom: 119px;
+    margin-bottom: 105px;
     color: #fff6f6;
     padding: 60px;
     display: flex;
@@ -179,8 +188,61 @@ body {
     opacity: 0.4;
 }
 
+
 /*VEHICULO/DETALLES*/
 .lblModificarVolverLista {
     font-weight:400;
     font-size:17px;
 }
+
+/*INFO EXTRA CONTAINER*/
+
+.infoExtra-container {
+    display: flex;
+    gap: 32px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 105px;
+
+}
+.info-card {
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    padding: 25px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+    .info-card:hover {
+        width:16rem;
+    }
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.btn-infoExtra {
+    background-color: none;
+    border: none;
+    padding: 0;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/*
+@media (min-width: 600px) {
+    .card-container {
+        margin-top: 85px;
+        margin-bottom: 85px;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 30rem;
+        transition: .2s ease-in;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+}*/
